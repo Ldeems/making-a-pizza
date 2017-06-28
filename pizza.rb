@@ -20,51 +20,74 @@ def meat
 	def suasage?
 		if 1 == [1,2].sample
 			puts "suasage"
-		else
-			puts " "
+		
 		end	
 	end	
 	meat << suasage?
 	def bacon?
 		if 1 == [1,2].sample
 			puts "bacon"
-		else
-			puts " "
+		
 		end		
 	end	
 	meat << bacon?
 	def pepperoni?
 		if 1 == [1,2].sample
 			puts "pepperoni"
-		else
-			puts " "
+		
 		end
 	end			
 	meat << pepperoni?
 	def ham?
 		if 1 == [1,2].sample
 			puts "ham"
-		else 
-			puts ""
+		
 		end
 	end	
 	
 	def chicken?
 		if 1 == [1,2].sample
 			puts " chicken"
-		else
-			puts ""
+		
 		end
 	end
 	meat << chicken?			
 end
 
 def veggies 
-	mushrooms
-	olives
-	banna peppers
-	onions
+	veggies = []
 
+	def mushrooms?
+		if 1 == [1,2].sample
+			puts "mushrooms"
+		
+		end 
+	end
+	veggies << mushrooms?
+
+	def olives?
+		if 1 == [1,2].sample
+			puts "olives"
+		
+		end
+	end
+	veggies << olives?
+
+	def peppers?
+		if 1 == [1,2].sample
+			puts "peppers"
+		
+		end
+	end
+	veggies << peppers?			
+	
+	def onions?
+		if 1 == [1,2].sample
+			puts "onions"
+		
+		end
+	end
+	veggies << onions?		
 end
 
 def special
@@ -84,5 +107,7 @@ def pizza
 	print "yay pizza"
 end	
 
-#p crust
-p meat
+
+#	p crust
+#	p meat
+	p veggies
