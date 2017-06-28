@@ -15,12 +15,48 @@ end
 
 
 def meat 
-	suasage
-	bacon
-	peperoni
-	ham
-	chicken
+	meat = []
 
+	def suasage?
+		if 1 == [1,2].sample
+			puts "suasage"
+		else
+			puts " "
+		end	
+	end	
+	meat << suasage?
+	def bacon?
+		if 1 == [1,2].sample
+			puts "bacon"
+		else
+			puts " "
+		end		
+	end	
+	meat << bacon?
+	def pepperoni?
+		if 1 == [1,2].sample
+			puts "pepperoni"
+		else
+			puts " "
+		end
+	end			
+	meat << pepperoni?
+	def ham?
+		if 1 == [1,2].sample
+			puts "ham"
+		else 
+			puts ""
+		end
+	end	
+	
+	def chicken?
+		if 1 == [1,2].sample
+			puts " chicken"
+		else
+			puts ""
+		end
+	end
+	meat << chicken?			
 end
 
 def veggies 
@@ -48,4 +84,5 @@ def pizza
 	print "yay pizza"
 end	
 
-p crust
+#p crust
+p meat
